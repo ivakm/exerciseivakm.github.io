@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css  ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <div class="HeaderMenu">
+        <div class="HeaderMenuContainer">
+            <img src="images/logo.svg" alt="Лого" width="68" height="54">
+            <span>FACILITY TEST</span>
+            <ul>
+                <li><a href="#FULL_SLIDER">full slider</a></li>
+                <li><a href="#MINI_SLIDER">mini slader</a></li>
+                <li><a href="#COLUMNS">columns</a></li>
+                <li><a href="#ARTICLE">article</a></li>
+                <li><a href="#map">map</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slideshowContainer">
+        <div class="mySlides">
+            <h1 id="FULL_SLIDER">FULL SLIDER</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem dicta dolorem eligendi esse
+                exercitationem fuga ipsum iure laudantium maiores minima nisi quod temporibus, veniam!</p>
+            <img src="images/slider.jpg" width="100%" alt="">
+            <button class="mySlider-button" type="button" name="button">popup</button>
+        </div>
+        <div class="mySlides">
+            <h1>FULL SLIDER</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem dicta dolorem eligendi esse
+                exercitationem fuga ipsum iure laudantium maiores minima nisi quod temporibus, veniam!</p>
+            <img src="images/slider2.jpg" width="100%" alt="">
+            <button class="mySlider-button" type="button" name="button">popup</button>
+        </div>
+        <div class="mySlides">
+            <h1>FULL SLIDER</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem dicta dolorem eligendi esse
+                exercitationem fuga ipsum iure laudantium maiores minima nisi quod temporibus, veniam!</p>
+            <img src="images/slider3.jpg" width="100%" alt="">
+            <button class="mySlider-button" type="button" name="button">popup</button>
+        </div>
+
+        <a class="prev" onclick="plusSlider(-1)">&#10094</a>
+        <a class="next" onclick="plusSlider(1)">&#10095</a>
+
+        <div class="circle">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</header>
+<div id="Content">
+    <div class="ContentContainer">
+        <h2 id="MINI_SLIDER">mini slider</h2>
+        <div class="miniSlider">
+            <img class="mySlidesMini ActiveSlide" src="images/slider.jpg" alt="" width="300" height="180">
+            <img class="mySlidesMini " src="images/slider2.jpg" alt="" width="300" height="180">
+            <img class="mySlidesMini " src="images/slider3.jpg" alt="" width="300" height="180">
+            <a class="prev" onclick="PrevSlider()">&#10094</a>
+            <a class="next" onclick="NextSlider()">&#10095</a>
+        </div>
+        <h2 id="COLUMNS">columns</h2>
+        <div class="columns">
+            <ul>
+                <li>
+                    <h3>Title lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse laboriosam officiis quae
+                        tempore. Ab adipisci corporis debitis dicta enim nemo porro qui sunt vero.</p>
+                </li>
+                <li>
+                    <h3>Title lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem debitis deserunt dicta,
+                        dolorem facere mollitia nostrum quibusdam, quod recusandae sit tenetur totam voluptas? Delectus
+                        facilis fuga impedit laboriosam laudantium odio quaerat sapiente voluptate? Commodi deserunt
+                        expedita harum in nostrum!</p>
+                </li>
+                <li>
+                    <h3>Title lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis culpa, dicta dolores
+                        eveniet ex facere ipsam iure laborum magni nam nesciunt obcaecati odio omnis possimus quaerat
+                        quis quod quos repellat sapiente sit veritatis vero!</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Title lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis dolores nesciunt
+                        optio pariatur quae, quo rerum voluptate. A ab aperiam corporis delectus deserunt dignissimos
+                        dolore doloremque ducimus earum et, molestiae natus officia officiis placeat, quis ratione
+                        tempore? Itaque, maxime?</p>
+                </li>
+                <li>
+                    <h3>Title lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cumque doloremque quia,
+                        ratione reprehenderit?</p>
+                </li>
+                <li>
+                    <h3>Title lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae, cupiditate dolorem
+                        ducimus, eius eum fugiat id, iste libero mollitia perspiciatis provident quo sunt ut! Cumque
+                        dignissimos excepturi hic illo, incidunt, modi nobis officiis quisquam, reprehenderit tempore ut
+                        vitae.</p>
+                </li>
+            </ul>
+        </div>
+        <h2 id="ARTICLE">arcticle</h2>
+        <div class="Arcticle">
+            <h3>title h3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur assumenda, at commodi
+                dolore ex expedita explicabo, facilis fugit impedit ipsum nesciunt obcaecati, quasi qui repellendus sit
+                unde voluptatem. A aliquam, consequatur cumque dolor ea eligendi est reprehenderit repudiandae sapiente?
+                Aperiam beatae cupiditate deserunt dolorem, doloribus ducimus eius eos facere, impedit in, nostrum odit
+                qui quo suscipit ullam veritatis vitae. <strong>Architecto autem</strong> blanditiis, commodi delectus
+                dolor dolores eos
+                eum eveniet ipsa porro praesentium qui repellendus vitae voluptas voluptates? <a href="#">Atque
+                    laboriosam modi</a>
+                necessitatibus nemo numquam odit optio quam quisquam, tempora veniam! Aliquam amet assumenda explicabo
+                fugiat labore placeat quibusdam, quisquam voluptatem!</p><br/>
+            <h3>title h3</h3>
+            <p>Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit.</i> Consectetur debitis deserunt dolor
+                eaque eius enim expedita explicabo fugit ipsam, <span>laborum magni non quaerat quas quia quis</span>,
+                repellat rerum suscipit veniam.
+                At consectetur consequuntur, earum eius eum eveniet ex fugiat illum inventore, iure laboriosam,
+                laudantium magni neque quasi saepe sed voluptatibus.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="map"></div>
+</footer>
+
+<ul class="nav_mobile">
+    <li><a href="#FULL_SLIDER">FULL SLIDER</a></li>
+    <li><a href="#MINI_SLIDER">MINI SLIDER</a></li>
+    <li><a href="#COLUMNS">COLUMNS</a></li>
+    <li><a href="#ARTICLE">ARTICLE</a></li>
+    <li><a href="#map">MAP</a></li>
+</ul>
+<a class="burger_mobile">
+    <span></span>
+</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN6cRDXoteR0yKsUwXNz8rGGRV2fWOkj4&callback=initMap"></script>
+</body>
+</html>

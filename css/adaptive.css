@@ -1,0 +1,271 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .HeaderMenuContainer {
+        width: auto;
+        height: 85px;
+    }
+
+    .HeaderMenuContainer img {
+        margin-left: 40px;
+    }
+
+    .HeaderMenuContainer ul {
+        justify-content: space-around;
+    }
+
+    .mySlides img {
+        height: 685px;
+        width: 100%;
+    }
+
+    .mySlides h1 {
+        font-size: 45px;
+    }
+
+    .ContentContainer {
+        width: auto;
+    }
+
+    .miniSlider {
+        padding: 0 20px;
+        margin-bottom: 140px;
+    }
+
+    .miniSlider img {
+        width: 30%;
+    }
+
+    .miniSlider .prev, .miniSlider .next {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: -85px;
+    }
+
+    .miniSlider .prev {
+        left: 40%;
+    }
+
+    .miniSlider .next {
+        left: 55%;
+    }
+
+    .columns {
+        padding: 0 20px;
+    }
+
+    .columns ul li {
+        width: 31.5%;
+        margin-right: 20px;
+    }
+
+    .Arcticle {
+        width: auto;
+        margin: 0 20%;
+    }
+}
+
+@media screen and  (min-width: 320px) and (max-width: 767px) {
+
+    .HeaderMenuContainer {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HeaderMenuContainer img {
+        margin: 0;
+        float: none;
+    }
+
+    .HeaderMenuContainer span {
+        display: none;
+    }
+
+    .HeaderMenuContainer ul {
+        display: none;
+    }
+
+    .mySlides {
+        height: 455px;
+        width: 100%;
+    }
+    .mySlidesMini{
+        display: none;
+    }
+
+    .mySlides h1 {
+        font-size: 25px;
+        top: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mySlides p {
+        top: 100px;
+        padding: 0 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .mySlider-button {
+        top: 280px;
+    }
+
+    .mySlides img {
+        height: 455px;
+    }
+
+    .slideshowContainer .prev, .slideshowContainer .next {
+        display: none;
+    }
+
+    .ContentContainer {
+        width: auto;
+    }
+
+    .miniSlider {
+        margin-bottom: 120px;
+        width: 100%;
+    }
+
+    .miniSlider div{
+        margin: 0 auto;
+    }
+
+    .miniSlider img{
+        margin: 0 auto;
+    }
+
+    .miniSlider .prev, .miniSlider .next {
+        right: 0;
+        bottom: -30px;
+        top: auto;
+        transform: translate(-100%, 100%);
+    }
+
+    .mySlidesMini {
+        display: none;
+    }
+
+    .miniSlider .prev{
+        left: calc(50% - 50px);
+    }
+    .miniSlider .next {
+        transform: translate(100%, 100%);
+        left: 50%;
+    }
+
+    .ActiveSlide{
+        display:  block;
+    }
+    h3{
+        margin-bottom: 10px;
+    }
+
+    .columns ul {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+        display: block;
+    }
+
+    .columns ul li {
+        width: auto;
+    }
+
+    .columns ul li p{
+        margin-bottom: 40px;
+    }
+
+    .Arcticle {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    /*                              ADAPTIVE                    */
+    .burger_mobile {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
+    .burger_mobile span,
+    .burger_mobile span:before,
+    .burger_mobile span:after {
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+    }
+
+    .burger_mobile span:before {
+        content: '';
+        margin-top: -5px;
+    }
+
+    .burger_mobile span:after {
+        content: '';
+        margin-top: 5px;
+    }
+
+    .burger_mobile_active span {
+        background: transparent;
+    }
+
+    .burger_mobile_active span:before {
+        transform: rotate(135deg);
+        left: 0;
+        margin-top: 0;
+        transition: all 0.3s;
+    }
+
+    .burger_mobile_active span:after {
+        transform: rotate(-135deg);
+        left: 0;
+        margin-top: 0;
+        transition: all 0.3s;
+    }
+
+    .nav_mobile {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        transition: right 1.5s;
+        right: -100vw;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        flex-direction: column;
+    }
+
+    .nav_mobile_active {
+        right: 0;
+    }
+
+    .nav_mobile_active li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .nav_mobile_active li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
